@@ -1,8 +1,8 @@
 import os
-import dotenv
+from dotenv import load_dotenv
 
 # Load environment variables from .env file
-dotenv.load_dotenv()
+load_dotenv()
 
 # Constants
 API_ID = int(os.getenv("API_ID", "0"))
